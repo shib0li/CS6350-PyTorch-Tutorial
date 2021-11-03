@@ -12,7 +12,7 @@ if [ "$IMG" = "amaml" ]; then
 elif [ "$IMG" = "dpml" ]; then
     echo "Activate the environment for Differential Private Machine Learning..."
 elif [ "$IMG" = "tutorial" ]; then
-    echo "Activate the enviroment for CS6250 PyTorch Tutorial..."
+    echo "Activate the enviroment for CS6350 PyTorch Tutorial..."
 else
     echo "ERROR: No name Docker image has found !"
     exit 1
