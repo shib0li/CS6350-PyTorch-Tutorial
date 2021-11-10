@@ -1,5 +1,4 @@
 import os, sys
-from torch.utils.data import Dataset, DataLoader
 
 def create_path(path): 
     try:
@@ -31,14 +30,5 @@ def cprint(color, text, **kwargs):
     sys.stdout.flush()
     
     
-class SimpleDataset(Dataset):
-    def __init__(self, X, y):
-        super(SimpleDataset, self).__init__()
-        self.X = X
-        self.y = y
-        
-    def __getitem__(self, index):
-        return self.X[index,:], self.y[index,:]
-
-    def __len__(self,):
-        return self.X.shape[0]
+    
+    
