@@ -26,7 +26,6 @@ if [ "$ACCESS" = "jupyter" ]; then
   docker run -it --rm \
           --gpus=all \
           --name="$PRFX_JUPYTER$IMG" \
-	  --shm-size 50G \
           -p $PORT:8888 \
           -v ${PWD}:/workspace \
           -w /workspace \
@@ -38,8 +37,7 @@ elif [ "$ACCESS" = "cmd" ]; then
   docker run -it --rm \
           --gpus=all \
           --name="$PRFX_CMD$IMG$PORT" \
-	  --shm-size 50G \
-	  -p $PORT:22 \
+          -p $PORT:22 \
           -v ${PWD}:/workspace \
           -w /workspace \
           $IMG \
