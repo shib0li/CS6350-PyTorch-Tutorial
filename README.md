@@ -29,6 +29,7 @@ With CPU support only for all platforms
 ```
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 ```
+[Other install options](https://pytorch.org/get-started/locally/)
 
 ## Roadmap
 
